@@ -1,0 +1,514 @@
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('assets/font/Kanit-LightItalic.woff2') format('woff2'),
+      url('assets/font/Kanit-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('assets/font/Kanit-ExtraLight.woff2') format('woff2'),
+      url('assets/font/Kanit-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('assets/font/Kanit-Italic.woff2') format('woff2'),
+      url('assets/font/Kanit-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('assets/font/Kanit-Light.woff2') format('woff2'),
+      url('assets/font/Kanit-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('assets/font/Kanit-ExtraLightItalic.woff2') format('woff2'),
+      url('assets/font/Kanit-ExtraLightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('assets/font/Kanit-Thin.woff2') format('woff2'),
+      url('assets/font/Kanit-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('assets/font/Kanit-ThinItalic.woff2') format('woff2'),
+      url('assets/font/Kanit-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('assets/font/Kanit-SemiBoldItalic.woff2') format('woff2'),
+      url('assets/font/Kanit-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('assets/font/Kanit-MediumItalic.woff2') format('woff2'),
+      url('assets/font/Kanit-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('assets/font/Kanit-Black.woff2') format('woff2'),
+      url('assets/font/Kanit-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('assets/font/Kanit-Medium.woff2') format('woff2'),
+      url('assets/font/Kanit-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('assets/font/Kanit-Regular.woff2') format('woff2'),
+      url('assets/font/Kanit-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('assets/font/Kanit-SemiBold.woff2') format('woff2'),
+      url('assets/font/Kanit-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('assets/font/Kanit-BoldItalic.woff2') format('woff2'),
+      url('assets/font/Kanit-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('assets/font/Kanit-BlackItalic.woff2') format('woff2'),
+      url('assets/font/Kanit-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('assets/font/Kanit-ExtraBoldItalic.woff2') format('woff2'),
+      url('assets/font/Kanit-ExtraBoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('assets/font/Kanit-ExtraBold.woff2') format('woff2'),
+      url('assets/font/Kanit-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('assets/font/Kanit-Bold.woff2') format('woff2'),
+      url('assets/font/Kanit-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: 'Kanit';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+:root{
+  --theme1: #d9a373;
+  --theme2: #f5f5f5;
+  --theme3: #f0f2ee;
+  --white: #fff;
+  --white-light: #f2f2f2;
+  --black: #000;
+  --black-60: #00000066;
+  --black-40: #000000a4;
+  --light-dark: #353535;
+  --gray: #878585;
+  --red: #FF0000;
+  --green: #17cc37;
+  --red-dark: #8c0b20;
+}
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px
+}
+::-webkit-scrollbar-track-piece {
+  background: var(--theme3)
+}
+::-webkit-scrollbar-thumb {
+  background: var(--theme1)
+}
+body{
+  font-family: 'Kanit' !important;
+}
+
+
+.themebtn {
+  border-radius: 0px;
+  box-shadow: none;
+  border: 2px solid var(--black);
+  font-size: 14px;
+  padding: 10px 30px;
+  font-weight: 500;
+  line-height: normal;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  transition: all ease-in-out 0.3s;
+  &::before{
+      content: '';
+      height: 0px;
+      width: 100%;
+      background-color: var(--black);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all ease-in-out 0.3s;
+  }
+  & span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 20px;
+      transform: rotate(-45deg);
+      & img {
+          height: 100%;
+          transition: all ease-in-out 0.3s;
+      }
+  }
+  &:hover{
+      color: var(--white);
+      border-color: var(--black);
+      &::before{
+          height: 100%;
+      }
+      & span {
+          & img {
+              filter: invert(1);
+              transform: translateX(5px);
+          }
+      }
+  }
+  &.fill{
+      background-color: var(--black);
+      color: var(--white);
+      & span {
+          & img {
+              filter: invert(1);
+          }
+      }
+      &:hover{
+          color: var(--black);
+          &::before{
+              background-color: var(--white);
+          }
+          & span {
+              & img {
+                  filter: invert(0);
+              }
+          }
+      }
+  }
+  &.cart{
+      padding: 7px 25px;
+  }
+  &.outoffstock {
+      cursor: auto;
+      background-color: var(--white);
+      color: var(--black);
+      &::before{
+          display: none;
+      }
+      &:active{
+          background-color: var(--white) !important;
+          color: var(--black) !important;
+      }
+  }
+  &.filterBtn {
+      & .filterImg{
+          width: 18px;
+          transition: all ease-in-out 0.3s;
+      }
+      &:hover{
+          & .filterImg{
+              filter: invert(1);
+          }
+      }
+  }
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+  background: var(--black);
+}
+
+img {
+  max-width: 100%;
+}
+
+
+.select2 {
+  & .selection {
+      & .select2-selection {
+          border-radius: 0px;
+          box-shadow: none;
+          border: 2px solid var(--black);
+          padding: 10px 30px;
+          height: auto;
+          background-color: var(--black);
+          outline: none;
+          & .select2-selection__rendered{
+              padding: 0px 10px 0px 0px;
+              color: var(--white);
+              font-size: 14px;
+              font-weight: 500;
+              line-height: normal;
+          }
+      }
+      & .select2-selection__arrow {
+          top: 50%;
+          transform: translateY(-50%);
+          right: 10px;
+          & b {
+              border-width: 6px 5px 0 5px;
+              margin-top: -4px;
+              border-color: var(--white) transparent transparent transparent;
+          }
+      }
+  }
+  &.select2-container--open{
+      & .selection {
+          & .select2-selection{
+              & .select2-selection__arrow {
+                  & b {
+                      border-width: 0 5px 6px 5px;
+                      border-color: transparent transparent var(--white) transparent;
+                  }
+              }
+          }
+      }
+  }
+}
+
+.select2-dropdown {
+  border: none;
+  border-radius: 0px;
+  background: var(--black);
+  color: var(--white);
+  font-size: 14px;
+  & .select2-search {
+      & input{
+          box-shadow: none;
+          border-radius: 4px;
+          background: transparent;
+          border-color: var(--theme1) !important;
+          color: var(--white);
+          outline: none;
+          font-size: 14px;
+      }
+  }
+  & .select2-results__options {
+      & li{
+          padding: 5px 10px;
+          &.select2-results__option--highlighted, &.select2-results__option--selected{
+              background-color: var(--light-dark);
+          }
+          // &.select2-results__option--selected {
+          //     background-color: var(--theme1);
+          // }
+      }
+  }
+}
+
+.actionBtn {
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 5px;
+  display: inline-flex;
+  transition: all ease-in-out 0.3s;
+  &.addcart{
+      background-color: rgba(9,137,255,.06);
+      &:hover{
+          background-color: rgba(9,137,255,.1);
+      }
+  }
+  &.close{
+      background-color: rgba(255, 9, 9, 0.06);
+      &:hover{
+          background-color: rgba(255, 9, 9, 0.1);
+      }
+  }
+  & img {
+      width: 100%;
+  }
+}
+
+.loremtext {
+  font-size: 16px;
+  line-height: normal;
+  font-weight: normal;
+  color: var(--black);
+  opacity: 0.9;
+}
+section{
+  margin: 60px 0px;
+}
+
+
+@media screen and (max-width: 1199.98px) {
+  section{
+      margin: 50px 0px;
+  }
+}
+
+
+@media screen and (max-width: 767.98px) {
+  .themebtn{
+      padding: 8px 30px;
+  }
+  .select2 {
+      & .selection {
+          & .select2-selection {
+              padding: 8px 30px;
+          }
+      }
+  }
+}
+
+
+
+.table>:not(caption)>*>*{
+  border-color: var(--theme3);
+}
+
+
+
+// *** -------------- Heading css
+.heading {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 1;
+  text-transform: capitalize;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  & span{
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      line-height: 3em;
+      padding-left: 0.25em;
+      color: var(--black-60);
+      padding-bottom: 5px;
+  }
+  &::before{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 60px;
+      height: 2px;
+      content: "";
+      background-color: var(--theme1);
+  }
+  &.centerd{
+      justify-content: center;
+      text-align: center;
+      &::before{
+          left: 50%;
+          transform: translateX(-50%);
+      }
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .heading {
+      margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .heading {
+      font-size: 32px;
+      margin-bottom: 32px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .heading {
+      font-size: 30px;
+      margin-bottom: 25px;
+      & span{
+          font-size: 12px;
+          padding-bottom: 3px;
+      }
+  }
+}

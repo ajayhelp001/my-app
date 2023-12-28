@@ -1,0 +1,71 @@
+// * Offer Section
+.offerSection {
+    min-height: 700px;
+    background: url(../../assets/images/beige-2-men-bg-1.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    padding: 50px 0px;
+    & .productName , & .discount{
+        color: var(--white);
+    }
+    & .productName {
+        font-size: 50px;
+        line-height: 100%;
+    }
+    & .discount {
+        font-size: 110px;
+        line-height: 80%;
+    }
+}
+@media screen and (max-width: 1399.98px){
+    // * Offer Section
+    .offerSection {
+        min-height: 500px;
+        & .productName {
+            font-size: 40px;
+        }
+        & .discount {
+            font-size: 90px;
+        }
+    }
+}
+@media screen and (max-width: 1199.98px) {
+    // * Offer Section
+    .offerSection {
+        background-attachment: unset;
+        min-height: 400px;
+        & .productName {
+            font-size: 35px;
+        }
+        & .discount {
+            font-size: 75px;
+        }
+    }
+}
+@media screen and (max-width: 991.98px) {
+    // * Offer Section
+    .offerSection {
+        min-height: 320px;
+        & .productName {
+            font-size: 24px;
+        }
+        & .discount {
+            font-size: 60px;
+        }
+    }
+}
+@media screen and (max-width: 767.98px) {
+    // * Offer Section
+    .offerSection {
+        min-height: 0px;
+        & .productName {
+            font-size: 24px;
+        }
+        & .discount {
+            font-size: 50px;
+        }
+    }
+}

@@ -1,0 +1,243 @@
+// * Hero Section Css
+.herosection {
+    height: 100vh;
+    min-height: 600px;
+    background-color: var(--theme3);
+    overflow: hidden;
+    background-image: url(../../assets/images/heroBg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: cover;
+    & .innerfluid {
+        height: 100%;
+        & .subheading {
+            font-size: 20px;
+            line-height: 100%;
+            font-weight: normal;
+            color: var(--black);
+            opacity: 0.9;
+            margin-bottom: 20px;
+            animation-delay: .3s;
+            animation-duration: 1s;
+            padding-left: 8px;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 2px;
+                height: 100%;
+                background-color: var(--theme1);
+            }
+        }
+        & .mainheading {
+            font-size: 80px;
+            font-weight: 400;
+            color: var(--black);
+            line-height: 100%;
+            letter-spacing: -.01em;
+            margin-bottom: 30px;
+            animation-delay: .5s;
+            animation-duration: 1s;
+            & span {
+                // color: var(--theme1);
+                text-transform: uppercase;
+                -webkit-text-stroke: 1px var(--light-dark);
+                -webkit-text-fill-color: rgba(0,0,0,0);
+                transform: translateX(50%);
+                transition: all .3s ease-in-out;
+            }
+        }
+        & .loremtext {
+            margin-bottom: 50px;
+            animation-delay: .7s;
+            animation-duration: 1s;
+        }
+        & .themebtn{
+            animation-delay: .9s;
+            animation-duration: 1s;
+        }
+        & .productPart {
+            width: 100%;
+            position: relative;
+            & .animated{
+                position: absolute;
+                top: -25%;
+                left: -15%;
+                width: 450px;
+                height: 450px;
+                border-radius: 50%;
+                background-color: rgba(var(--white), 0.8);
+                animation: tp-hotspot 3s cubic-bezier(.4,0,1,1) infinite;
+                box-shadow: 0px 0px 31px 0px var(--theme1);
+                &.circle1{
+                    animation-delay: 1s;
+                }
+                &.circle2{
+                    animation-delay: 0s;
+                }
+            }
+            & .slidesImg {
+                width: 75%;
+                position: relative;
+                z-index: 2;
+            }
+        }
+        @keyframes tp-hotspot {
+            0% {
+                transform: scale(.8);
+                opacity: 0
+            }
+        
+            70% {
+                opacity: 1
+            }
+        
+            to {
+                transform: scale(1.3);
+                opacity: 0
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199.98px){
+     // * Hero Section Css
+     .herosection {
+        padding-top: 70px;
+        & .innerfluid {
+            & .subheading {
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+            & .mainheading {
+                font-size: 65px;
+                margin-bottom: 25px;
+            }
+            & .loremtext {
+                margin-bottom: 45px;
+            }
+            & .productPart {
+                & .animated{
+                    top: -20%;
+                    left: -15%;
+                    width: 450px;
+                    height: 450px;
+                }
+                & .slidesImg {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 991.98px){
+     // * Hero Section Css
+     .herosection {
+        & .innerfluid {
+            & .subheading {
+                font-size: 16px;
+                margin-bottom: 16px;
+            }
+            & .mainheading {
+                font-size: 50px;
+                margin-bottom: 26px;
+            }
+            & .loremtext {
+                margin-bottom: 35px;
+            }
+            & .productPart {
+                & .animated{
+                    top: -20%;
+                    left: -15%;
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767.98px){
+        // * Hero Section Css
+        .herosection {
+            padding-top: 100px;
+            & .innerfluid {
+                & .subheading {
+                    margin-bottom: 10px;
+                }
+                & .mainheading {
+                    font-size: 40px;
+                    margin-bottom: 20px;
+                }
+                & .loremtext {
+                    margin-bottom: 30px;
+                }
+                & .productPart {
+                    & .animated{
+                        top: -20%;
+                        left: -15%;
+                        width: 250px;
+                        height: 250px;
+                    }
+                }
+            }
+        }
+}
+@media screen and (max-width: 575.98px) {
+    // * Hero Section Css
+    .herosection {
+        height: unset;
+        padding-top: 80px;
+        background-image: none;
+        & .innerfluid {
+            & .subheading {
+            }
+            & .mainheading {
+                font-size: 35px;
+            }
+            & .loremtext {
+            }
+            & .animationpart {
+                height: unset !important;
+            }
+            & .productPart {
+                margin-top: 40px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                & .animated{
+                    top: -7%;
+                    left: 7%;
+                    width: 300px;
+                    height: 300px;
+                }
+                & .slidesImg {
+                    width: 75%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 424.98px) {
+    // * Hero Section Css
+    .herosection {
+        & .innerfluid {
+            & .mainheading {
+                font-size: 30px;
+            }
+            & .productPart {
+                margin-top: 50px;
+                & .animated{
+                    top: -7%;
+                    left: 2%;
+                    width: 250px;
+                    height: 250px;
+                }
+                & .slidesImg {
+                    width: 75%;
+                }
+            }
+        }
+    }
+}
