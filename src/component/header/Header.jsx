@@ -1,5 +1,6 @@
-// import React from 'react';
-// import { Link } from 'react-router';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { Link } from "react-router-dom";
 import search from '../../assets/images/icon/search.svg';
 import add_to_cart from '../../assets/images/icon/add_to_cart.svg';
 import wishlist from '../../assets/images/icon/wishlist.svg';
@@ -41,7 +42,7 @@ function Header() {
         <div className="offcanvas-body">
           <ul className="navbar-nav justify-content-center align-items-lg-center flex-grow-1">
             <li className="nav-item"><a className="nav-link active" aria-current="page" href="javascript:;">Home</a></li>
-            <li className="nav-item"><a className="nav-link" href="javascript:;">About Us</a></li>
+            <li className="nav-item"><Link to={"/about"} data-action="navigation" data-icon="arrow" data-href="/about" className="nav-link">About Us</Link></li>
             <li className="nav-item"><a className="nav-link" href="javascript:;">Products</a></li>
             <li className="nav-item"><a className="nav-link" href="javascript:;">Blog</a></li>
             <li className="nav-item"><a className="nav-link" href="javascript:;">Conntact Us</a></li>

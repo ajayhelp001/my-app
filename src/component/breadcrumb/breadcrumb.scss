@@ -1,0 +1,72 @@
+.breadcrumbStylr {
+    height: 40vh;
+    min-height: 300px;
+    // background-image: ;
+    background: url(../../assets/images/abstrectBg.svg) bottom no-repeat;
+    background-size: cover;
+}
+
+// * Breadcrumb Css
+.pageheading {
+    font-size: 40px;
+    line-height: 100%;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    & span {
+        padding: 5px 25px;
+        position: relative;
+        &::before,
+        &::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: var(--theme1);
+            position: absolute;
+            left: 0;
+        }
+        &::before {
+            bottom: 0%;
+        }
+        &::after {
+            bottom: 2px;
+        }
+    }
+}
+.breadcrumbs {
+    & .breadcrumb {
+        margin: 0px;
+        position: relative;
+        padding: 8px 25px;
+        z-index: 1;
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: var(--light-dark);
+            z-index: -1;
+            transform: skewX(10deg);
+        }
+        & .breadcrumb-item {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: normal;
+            color: var(--theme1);
+            &::before {
+                color: var(--theme1);
+            }
+            & a {
+                color: var(--white);
+                text-decoration: none;
+                transition: all ease-in-out 0.3s;
+                &:hover {
+                    color: var(--theme2);
+                }
+            }
+        }
+    }
+}

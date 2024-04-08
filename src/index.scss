@@ -205,6 +205,16 @@ body{
   font-family: 'Kanit' !important;
 }
 
+.loremtext {
+  font-size: 16px;
+  line-height: normal;
+  font-weight: normal;
+  color: var(--black);
+  opacity: 0.9;
+}
+section{
+  margin: 60px 0px;
+}
 
 .themebtn {
   border-radius: 0px;
@@ -412,16 +422,7 @@ img {
   }
 }
 
-.loremtext {
-  font-size: 16px;
-  line-height: normal;
-  font-weight: normal;
-  color: var(--black);
-  opacity: 0.9;
-}
-section{
-  margin: 60px 0px;
-}
+
 
 
 @media screen and (max-width: 1199.98px) {
@@ -442,6 +443,10 @@ section{
           }
       }
   }
+  .loremText {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
 }
 
 

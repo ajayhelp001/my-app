@@ -1,0 +1,167 @@
+//  * Our Story Section  Css
+.ourstorysection {
+    padding-bottom: 30px;
+    & .innerfluid {
+        & .leftImg {
+            position: relative;
+            transition: all ease-in-out 0.3s;
+            overflow: hidden;
+            & img {
+                transition: all ease-in-out 0.3s;
+            }
+            &:hover {
+                & img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+        & .rhs_img {
+            margin-left: -80px;
+            margin-bottom: -30px;
+        }
+        & .imgSide {
+            & .lhs_img {
+                &:hover {
+                    & .leftImg {
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+        & .text {
+            padding-right: 30px;
+            & p {
+                font-size: 16px;
+                line-height: normal;
+                letter-spacing: 0.3px;
+                font-weight: 500;
+                color: var(--light-dark);
+                & span {
+                    font-weight: 600;
+                    color: var(--theme1);
+                }
+            }
+        }
+        & .authoreInfo {
+            margin-top: 20px;
+            & .beforeGroup {
+                position: relative;
+                &::before {
+                    content: "";
+                    height: 100%;
+                    width: 1px;
+                    position: absolute;
+                    right: 0%;
+                    top: 0;
+                    background-color: var(--gray);
+                }
+            }
+            & .signature {
+                padding-right: 20px;
+            }
+            & .authore {
+                & ul {
+                    list-style: none;
+                    margin: 0px;
+                    & li {
+                        & a {
+                            text-decoration: none;
+                            font-size: 16px;
+                            line-height: normal;
+                            font-weight: 500;
+                            color: var(--light-dark);
+                            transition: all ease-in-out 0.3s;
+                            &:hover {
+                                color: var(--theme1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// * Mackup Section Css
+.mackupsectin {
+    & .innerfluid {
+        & .mackupimg {
+            & img {
+                width: 100%;
+            }
+        }
+        & .innerbody {
+            & > div {
+                &:nth-child(even) {
+                    & .contentSide {
+                        padding-right: 30px;
+                    }
+                }
+                &:nth-child(odd) {
+                    & .contentSide {
+                        padding-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 991.98px){
+        // * Mackup Section Css
+        .mackupsectin {
+            & .innerfluid {
+                & .innerbody {
+                    & > div {
+                        &:nth-child(even) {
+                            & .contentSide {
+                                padding-right: 00px;
+                            }
+                        }
+                        &:nth-child(odd) {
+                            & .contentSide {
+                                padding-left: 00px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+
+
+
+@media screen and (max-width: 575.98px) {
+    //  * Our Story Section  Css
+    .ourstorysection {
+        & .innerfluid {
+            & .rhs_img {
+                margin-left: -60px;
+                margin-bottom: -30px;
+            }
+            & .text {
+                padding-right: 25px;
+                & p {
+                    font-size: 14px;
+                }
+            }
+            & .authoreInfo {
+                margin-top: 15px;
+                & .signature {
+                    padding-right: 12px;
+                }
+                & .authore {
+                    & ul {
+                        padding-left: 12px;
+                        & li {
+                            & a {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
